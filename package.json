@@ -1,0 +1,36 @@
+{
+  "name": "volatility-standouts",
+  "version": "1.0.0",
+  "description": "A node app that generates a human-like mp3 recording via googles cloud text-to-speech api for streaming on the Alexa platform, after every market trading day at market close",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node index.js",
+    "prod": "NODE_ENV=production node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frewinchristopher/volatility-standouts.git"
+  },
+  "keywords": [
+    "google",
+    "text-to-speech",
+    "volatility",
+    "market",
+    "trading",
+    "alexa"
+  ],
+  "author": "Christopher Frewin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frewinchristopher/volatility-standouts/issues"
+  },
+  "homepage": "https://github.com/frewinchristopher/volatility-standouts#readme",
+  "dependencies": {
+    "node-schedule": "^1.3.0",
+    "say": "^0.14.0",
+    "shelljs": "^0.8.1",
+    "text-to-speech": "^1.0.8",
+    "uuid": "^3.2.1"
+  }
+}
