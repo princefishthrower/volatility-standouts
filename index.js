@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'production') {
     checkForHoliday(); // we are on a week day and it is not a federal holiday, create the report!
   });
 } else {
-  // development - run the util jobs immediately (create new JSON and MP3 files and put them on chrisfrew.in)
+  // development - run what the job would, but immediately (create new JSON and MP3 files and put them on chrisfrew.in)
   //volatilityReport.getVolatilityData; // bunch of NLP ML stuff to build the text (for now is just hardcoded) should be async, THEN we call the following two functions (which can be run in parallel) :
   checkForHoliday();
 }

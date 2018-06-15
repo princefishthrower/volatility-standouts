@@ -21,7 +21,11 @@ if (process.env.NODE_ENV === 'production') {
 
 // generates the preamble of the report before the chapters
 function preamble() {
-  return "Good evening Chris, the markets in the U.S. have just closed. It is " + moment().format('dddd') + ", " +  moment().format('MMMM Do YYYY, h:mm:ss a') + ". This... is today's Volatility Report. Enjoy. ";
+  sTime = moment().format('h mm a');
+  sHour = sTime.split(" ")[0];
+  sMinute = sTime.split(" ")[1]
+  sPeriod = sTime.split(" ")[2].toUpperCase(); // convert to upper case for robo-reading :)
+  return "Good evening Chris, the markets in the U.S. have just closed. It is " + moment().format('dddd') + ", " +  moment().format('MMMM Do YYYY') + " " + sHour + " " + sMinute + " " + sPeriod + ". This... is today's Volatility Report. Enjoy. ";
 }
 
 async function buildVolatilityReport() {
