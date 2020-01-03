@@ -98,7 +98,7 @@ function publishMP3() {
       console.log("MP3 file for Alexa successfully generated and saved! Should be reachable live at https://chrisfrew.in/public/volatility-standouts/feed.mp3");
     } else {
       console.log("MP3 file for Alexa successfully generated and saved! Should be saved at " + sRelativeFilePath + "feed.mp3");
-      console.log("Here is the text and playback of the voice:");
+      console.log("Here is the text and a sample playback, (though not alexas voice):");
       console.log(sTextToSpeach);
       fs.createReadStream(sRelativeFilePath + sMP3FileName)
         .pipe(new lame.Decoder())
