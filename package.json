@@ -31,7 +31,7 @@
     "cheerio": "^1.0.0-rc.2",
     "cheerio-tableparser": "^1.0.1",
     "lame": "^1.2.4",
-    "moment": "^2.22.2",
+    "moment": "^2.29.4",
     "moment-holiday": "^1.5.1",
     "node-schedule": "^1.3.0",
     "say": "^0.14.0",
